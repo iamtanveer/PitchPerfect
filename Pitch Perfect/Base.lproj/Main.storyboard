@@ -34,9 +34,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-ua-oCS">
-                                <rect key="frame" x="134.5" y="448" width="106" height="30"/>
-                                <state key="normal" title="Stop Recording"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-ua-oCS">
+                                <rect key="frame" x="110" y="448" width="155" height="155"/>
+                                <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hri-0p-48S"/>
                                 </connections>
@@ -53,8 +53,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="RaS-ua-oCS" id="aM3-DF-1ke"/>
                         <outlet property="recordingLabel" destination="Ggz-Xw-E7h" id="1dO-IC-Vwd"/>
-                        <outlet property="redordButton" destination="Fhd-UO-wR8" id="d3H-y1-EPJ"/>
                         <outlet property="stopRecordingButton" destination="RaS-ua-oCS" id="Pmk-8v-w9e"/>
                     </connections>
                 </viewController>
@@ -65,5 +65,6 @@
     </scenes>
     <resources>
         <image name="Record" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
     </resources>
 </document>
