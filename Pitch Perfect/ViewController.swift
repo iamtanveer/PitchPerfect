@@ -11,10 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var recordingLabel: UILabel!
+    @IBOutlet var redordButton: UIButton!
+    @IBOutlet var stopRecordingButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear called")
     }
 
     override func didReceiveMemoryWarning() {
